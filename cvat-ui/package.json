@@ -1,8 +1,8 @@
 {
-  "name": "cvat-ui",
-  "version": "1.10.0",
+  "name": "@labshare/cvat-ui",
+  "version": "1.10.3",
   "description": "CVAT single-page application",
-  "main": "src/index.tsx",
+  "main": "dist/index.min.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js",
     "start": "REACT_APP_API_URL=http://localhost:7000 webpack-dev-server --config ./webpack.config.js --mode=development",
@@ -59,8 +59,8 @@
     "@types/redux-logger": "^3.0.8",
     "antd": "^3.26.19",
     "copy-to-clipboard": "^3.3.1",
-    "cvat-canvas": "file:../cvat-canvas",
-    "cvat-core": "file:../cvat-core",
+    "@labshare/cvat-canvas": "^2.1.3",
+    "@labshare/cvat-core": "^3.9.0",
     "dotenv-webpack": "^1.8.0",
     "error-stack-parser": "^2.0.6",
     "lodash": "^4.17.20",
@@ -80,5 +80,8 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
